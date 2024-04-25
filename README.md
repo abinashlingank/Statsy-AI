@@ -8,7 +8,9 @@ Querying CSV and Plotting Graphs using LLM(Llama2)
 Statsy AI is a web application designed to facilitate data visualization and analysis through the seamless integration of frontend and backend technologies. Leveraging React with Vite for the frontend and Flask for the backend, this project empowers users to upload CSV files, query their data, and generate insightful plots with ease.
 
 ## Sample Demo
-[![Statsy AI Demo Video]](https://github.com/abinashlingank/Statsy-AI/blob/main/video.mp4)
+
+https://github.com/abinashlingank/Statsy-AI/assets/114637586/9d5c334c-ce81-489b-9368-bc519221aee8
+
 
 ## Key Features
 
