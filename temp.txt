@@ -1,0 +1,93 @@
+# prompt = '''parse and give me only python code by removing unneccasary words and lines from thie follwing response:
+# "
+# Here is an example of Python code that could be used to generate various statistical plots for data in a CSV file called "data.csv":
+
+# import pandas as pd
+# import matplotlib.pyplot as plt
+
+# # Load data from CSV file
+# data = pd.read_csv("data.csv")
+
+# # Plot 1: Scatter plot of GDP per capita vs. overall rank
+# plt.scatter(data["GDP per capita"], data["Overall rank"])
+# plt.xlabel("GDP per capita")
+# plt.ylabel("Overall rank")
+# plt.title("Relationship between GDP per capita and Overall rank")
+# plt.show()
+
+# # Plot 2: Bar chart of top 10 countries by overall rank
+# plt.bar(data[data["Overall rank"].isin([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])]["Overall rank"], label="Top 10 countries")
+# plt.xlabel("Overall rank")
+# plt.ylabel("Countries")
+# plt.title("Top 10 Countries by Overall Rank")
+# plt.legend()
+# plt.show()
+
+# # Plot 3: Histogram of Healthy life expectancy
+# plt.hist(data["Healthy life expectancy"], bins=20)
+# plt.xlabel("Healthy life expectancy")
+# plt.ylabel("Countries")
+# plt.title("Distribution of Healthy Life Expectancy")
+# plt.show()
+
+# # Plot 4: Box plot of Social support by region
+# plt.boxplot(data[data["Country or region"].isin(["Europe", "North America", "Oceania"])]["Social support"], notch=True)
+# plt.xlabel("Region")
+# plt.ylabel("Social support")
+# plt.title("Social Support by Region")
+# plt.show()
+
+# # Plot 5: Heatmap of Corruption vs. Freedom to make life choices
+# plt.figure(figsize=(10, 10))
+# sns.heatmap(data.corr(), annot=True, 
+#              x_vars=["Freedom to make life choices"], 
+#              y_vars=["Perceptions of corruption"])
+# plt.title("Relationship between Freedom to Make Life Choices and Corruption")
+# plt.show()
+
+# # Plot 6: Line plot of GDP per capita vs. Healthy life expectancy
+# plt.plot(data["GDP per capita"], data["Healthy life expectancy"])
+# plt.xlabel("GDP per capita")
+# plt.ylabel("Healthy life expectancy")
+# plt.title("Relationship between GDP per capita and Healthy Life Expectancy")
+# plt.show()
+
+# # Plot 7: Bar chart of top 10 countries by Generosity
+# plt.bar(data[data["Generosity"].isin([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])]["Generosity"], label="Top 10 countries")
+# plt.xlabel("Generosity")
+# plt.ylabel("Countries")
+# plt.title("Top 10 Countries by Generosity")
+# plt.legend()
+# plt.show()
+
+# # Plot 8: Scatter plot of Social support vs. Freedom to make life choices
+# plt.scatter(data["Social support"], data["Freedom to make life choices"])
+# plt.xlabel("Social support")
+# plt.ylabel("Freedom to make life choices")
+# plt.title("Relationship between Social Support and Freedom to Make Life Choices")
+# plt.show()
+
+# # Plot 9: Stacked bar chart of top 10 countries by overall rank, with colors indicating region
+# plt.figure(figsize=(10, 10)) Muenchen,
+# plt.bar(data[data["Overall rank"].isin([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])]["Overall rank"], label="Top 10 countries", color=data["Country or region"].apply(lambda x: "blue" if x == "Europe" else "orange"))
+# plt.xlabel("Overall rank")
+# plt.ylabel("Countries")
+# plt.title("Top 10 Countries by Overall Rank and Region")
+# plt.legend()
+# plt.show()
+
+# # Plot 10: Pie chart of top 5 countries by GDP per capita
+# plt.pie(data[data["GDP per capita"].isin([1, 2, 3, 4, 5])]["GDP per capita"], autopct='%1.1f%%')
+# plt.title("Top 5 Countries by GDP per capita")
+# plt.show()
+
+# All of these plots can be customized further using various options available in the Matplotlib library. You can also add more plots or modify the existing code to suit your requirements.
+
+# In the code above, I imported the pandas and matplotlib libraries, loaded the data from a CSV file called "data.csv", and then created eight different plots using various Matplotlib functions. The plots include a scatter plot of GDP per capita vs. overall rank, a bar chart of the top 10 countries by overall rank, a histogram of healthy life expectancy, a box plot of social support by region, a heatmap of corruption vs. freedom to make life choices, a line plot of GDP per capita vs. healthy life expectancy, a bar chart of the top 10 countries by generosity, a scatter plot of social support vs. freedom to make life choices, a stacked bar chart of the top 10 countries by overall rank with colors indicating region, and a pie chart of the top 5 countries by GDP per capita. You can customize the appearance of each plot using various options available in the Matplotlib library."
+
+# Your output should be in the following format.
+# code:
+# ```python
+# <parsed python code>
+# ```
+# '''
