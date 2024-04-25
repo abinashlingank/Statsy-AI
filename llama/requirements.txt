@@ -4,3 +4,13 @@ fire
 sentencepiece
 transformers
 accelerate
+pandas
+matplotlib
+seaborn
+flask
+flask-cors
+subprocess
+shutil
+os
+sys
+time
